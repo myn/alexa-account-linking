@@ -8,11 +8,10 @@
     <body>
         <script>
           var urlParams = new URLSearchParams(window.location.search);
-            alert(urlParams.get('redirect_uri'))
           window.location= urlParams.get('redirect_uri')
-            + 'state=' + urlParams.get('state')
-            + 'access_token=foo access token'
-            + 'token_type=Bearer'
+            + '#state=' + urlParams.get('state')
+            + '&access_token=Hyyan'
+            + '&token_type=Bearer'
         </script>
     </body>
 </html>
