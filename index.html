@@ -6,10 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        Hallo !
         <script>
           var urlParams = new URLSearchParams(window.location.search);
-           alert(urlParams.get('state'));
+          window.location= "https://layla.amazon.com/spa/skill/account-linking-status.html?vendorId=MG4N5KKLX8GL0" 
+            + 'state='urlParams.get('state')
+            + 'access_token=foo access token'
+            + 'token_type=footoken'
         </script>
     </body>
 </html>
