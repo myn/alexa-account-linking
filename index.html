@@ -8,7 +8,8 @@
     <body>
         <script>
           var urlParams = new URLSearchParams(window.location.search);
-          window.location= "https://layla.amazon.com/spa/skill/account-linking-status.html?vendorId=MG4N5KKLX8GL0" 
+            alert(urlParams.get('redirect_uri'))
+          window.location= urlParams.get('redirect_uri')
             + 'state=' + urlParams.get('state')
             + 'access_token=foo access token'
             + 'token_type=footoken'
